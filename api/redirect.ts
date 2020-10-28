@@ -1,46 +1,21 @@
 import { NowRequest, NowResponse } from '@vercel/node'
-import firebase from 'firebase'
+
+const fetch = require('node-fetch')
 
 export default async (req: NowRequest, res: NowResponse) => {
 	const { id } = req.query
 
-	console.log(req.url)
-
-	console.log(id)
-
-	const {
-		apiKey,
-		authDomain,
-		databaseURL,
-		projectId,
-		storageBucket,
-		messagingSenderId,
-		appId,
-		measurementId,
-	} = process.env
-
-	const f = firebase.initializeApp({
-		apiKey,
-		authDomain,
-		databaseURL,
-		projectId,
-		storageBucket,
-		messagingSenderId,
-		appId,
-		measurementId,
-	})
-
-	const url = await f
-		.firestore()
-		.collection('routes')
-		.doc(id)
-		.get()
-		.then((x) => x.data())
+	const { projectId } = process.env
+	const url = await fetch(
+		`https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/routes/${id}`
+	)
+		.then((x) => x.json())
+		.then((x) => x.fields)
 
 	if (url) {
-		const u = url.url + req.url.replace(`/${id}`, '')
+		const u = url.url.stringValue + req.url.replace(`/${id}`, '')
 
-		console.log(u)
+		console.log(`Sending url ${u}`)
 
 		res.redirect(301, u.replace(`?id=${id}`, ''))
 	} else {
