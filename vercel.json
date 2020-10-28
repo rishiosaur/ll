@@ -20,6 +20,10 @@
 		{
 			"source": "/:id/(.*)",
 			"destination": "/api/redirect"
+		},
+		{
+			"source": "/:id",
+			"destination": "/api/redirect"
 		}
 	],
 	"github": {
