@@ -1,32 +1,32 @@
 {
-    "headers": [
-      {
-        "source": "/(.*)",
-        "headers": [
-          {
-            "key": "cache-control",
-            "value": "s-maxage=60, stale-while-revalidate"
-          }
-        ]
-      }
-    ],
-    "redirects": [
-      {
-        "source": "/",
-        "destination": "https://rishi.cx"
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/:id",
-        "destination": "/api/redirect"
-      }
-    ],
-    "github": {
-      "autoAlias": true,
-      "enabled": true
-    },
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "public": true
-  }
+	"headers": [
+		{
+			"source": "/(.*)",
+			"headers": [
+				{
+					"key": "cache-control",
+					"value": "s-maxage=60, stale-while-revalidate"
+				}
+			]
+		}
+	],
+	"redirects": [
+		{
+			"source": "/",
+			"destination": "https://rishi.cx"
+		}
+	],
+	"rewrites": [
+		{
+			"source": "/:id",
+			"destination": "/api/redirect"
+		}
+	],
+	"github": {
+		"autoAlias": true,
+		"enabled": true
+	},
+	"cleanUrls": true,
+	"trailingSlash": false,
+	"public": true
+}
