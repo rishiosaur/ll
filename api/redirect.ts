@@ -40,7 +40,9 @@ export default async (req: NowRequest, res: NowResponse) => {
 	if (url) {
 		const u = url.url + req.url.replace(`/${id}`, '')
 
-		res.redirect(301, u)
+		console.log(u)
+
+		res.redirect(301, u.replace(`?id=${id}`, ''))
 	} else {
 		res.redirect(301, 'https://rishi.cx')
 	}
