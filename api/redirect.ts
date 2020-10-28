@@ -4,6 +4,10 @@ import firebase from 'firebase'
 export default async (req: NowRequest, res: NowResponse) => {
 	const { id } = req.query
 
+	console.log(req.url)
+
+	console.log(id)
+
 	const {
 		apiKey,
 		authDomain,
@@ -34,7 +38,9 @@ export default async (req: NowRequest, res: NowResponse) => {
 		.then((x) => x.data())
 
 	if (url) {
-		res.redirect(301, url.url)
+		const u = url.url + req.url.replace(`/${id}`, '')
+
+		res.redirect(301, u)
 	} else {
 		res.redirect(301, 'https://rishi.cx')
 	}
