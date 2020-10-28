@@ -5,7 +5,7 @@ const fetch = require('node-fetch')
 export default async (req: NowRequest, res: NowResponse) => {
 	const { id } = req.query
 
-	const { projectId } = process.env
+	const { projectId, baseUrl } = process.env
 	const url = await fetch(
 		`https://firestore.googleapis.com/v1/projects/${projectId}/databases/(default)/documents/routes/${id}`
 	)
@@ -19,7 +19,7 @@ export default async (req: NowRequest, res: NowResponse) => {
 
 		res.redirect(301, u.replace(`?id=${id}`, ''))
 	} else {
-		res.redirect(301, 'https://rishi.cx')
+		res.redirect(301, baseUrl)
 	}
 
 	res.end('Hello')
