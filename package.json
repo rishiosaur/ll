@@ -9,7 +9,7 @@
 	"private": false,
 	"dependencies": {
 		"@vercel/node": "^1.8.4",
-		"firebase": "^8.0.0",
+		"node-fetch": "^2.6.1",
 		"vercel": "^20.1.2"
 	},
 	"devDependencies": {
