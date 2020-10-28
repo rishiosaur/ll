@@ -19,8 +19,6 @@ export default async (req: NowRequest, res: NowResponse) => {
 
 		res.redirect(301, u.replace(`?id=${id}`, ''))
 	} else {
-		res.redirect(301, baseUrl)
+		res.redirect(307, baseUrl)
 	}
-
-	res.end('Hello')
 }
