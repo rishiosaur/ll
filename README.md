@@ -1,0 +1,13 @@
+# LL
+
+A minimal link shortener powered by Vercel's serverless functions and Firebase Cloud Firestore.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frishiosaur%2Fll&env=apiKey,authDomain,databaseURL,projectId,storageBucket,messagingSenderId,appId,measurementId&project-name=link-shortener&repo-name=link-shortener)
+
+![lint status](https://github.com/rishiosaur/ll/workflows/lint/badge.svg)
+![format status](https://github.com/rishiosaur/ll/workflows/format/badge.svg)
+
+![GitHub](https://img.shields.io/github/license/rishiosaur/ll)
+![GitHub issues](https://img.shields.io/github/issues/rishiosaur/ll)
+![GitHub contributors](https://img.shields.io/github/contributors/rishiosaur/ll)
+![GitHub last commit](https://img.shields.io/github/last-commit/rishiosaur/ll)
