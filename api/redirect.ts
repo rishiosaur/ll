@@ -1,5 +1,5 @@
-import { NowRequest, NowResponse } from "@vercel/node";
-import firebase from "firebase";
+import { NowRequest, NowResponse } from '@vercel/node';
+import firebase from 'firebase';
 
 export default async (req: NowRequest, res: NowResponse) => {
   const { id } = req.query;
@@ -26,13 +26,13 @@ export default async (req: NowRequest, res: NowResponse) => {
     measurementId,
   })
 
-  const url = (await f.firestore().collection("routes").doc(id).get().then(x => x.data()))
+  const url = (await f.firestore().collection('routes').doc(id).get().then(x => x.data()))
 
   if(url) {
       res.redirect(301, url.url)
   } else {
-      res.redirect(301, "https://rishi.cx")
+      res.redirect(301, 'https://rishi.cx')
   }
 
-  res.end("Hello");
+  res.end('Hello');
 };
