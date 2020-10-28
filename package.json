@@ -1,14 +1,49 @@
 {
-  "name": "ll",
-  "version": "0.0.1",
-  "description": "A tiny link shortener running on vercel and firebase.",
-  "main": "src/index.ts",
-  "repository": "https://github.com/rishiosaur/ll",
-  "author": "Rishi Kothari",
-  "license": "MIT",
-  "private": false,
-  "dependencies": {
-    "@vercel/node": "^1.8.4",
-    "firebase": "^8.0.0"
-  }
+	"name": "ll",
+	"version": "0.0.1",
+	"description": "A tiny link shortener running on vercel and firebase.",
+	"main": "src/index.ts",
+	"repository": "https://github.com/rishiosaur/ll",
+	"author": "Rishi Kothari",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"@vercel/node": "^1.8.4",
+		"firebase": "^8.0.0",
+		"vercel": "^20.1.2"
+	},
+	"devDependencies": {
+		"@types/node": "^14.11.2",
+		"@types/react": "^16.9.49",
+		"@typescript-eslint/eslint-plugin": "^4.1.0",
+		"@typescript-eslint/parser": "^4.1.0",
+		"eslint": "^7.8.1",
+		"eslint-config-airbnb": "^18.2.0",
+		"eslint-config-prettier": "^6.11.0",
+		"eslint-config-wesbos": "^1.0.0",
+		"eslint-plugin-html": "^6.1.0",
+		"eslint-plugin-import": "2.20.0",
+		"eslint-plugin-jsx-a11y": "6.2.3",
+		"eslint-plugin-prettier": "^3.1.4",
+		"eslint-plugin-react": "7.18.0",
+		"eslint-plugin-react-hooks": "1.7.0",
+		"husky": "^4.3.0",
+		"prettier": "^2.1.2",
+		"prettier-eslint": "^11.0.0",
+		"typescript": "^4.0.3"
+	},
+	"husky": {
+		"hooks": {
+			"pre-push": "yarn run check:fix"
+		}
+	},
+	"scripts": {
+		"dev": "vc dev",
+		"format": "prettier --single-quote --write './**/*'",
+		"format:check": "prettier --single-quote --check './**/*'",
+		"lint": "eslint \"./**/*.{js,ts,tsx,jsx}\" --quiet --fix",
+		"lint:check": "eslint \"./**/*.{js,ts,tsx,jsx}\" --quiet",
+		"check": "yarn run format:check && yarn run lint:check",
+		"check:fix": "yarn run format && yarn run lint"
+	}
 }
