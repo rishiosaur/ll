@@ -1,0 +1,14 @@
+{
+  "name": "ll",
+  "version": "0.0.1",
+  "description": "A tiny link shortener running on vercel and firebase.",
+  "main": "src/index.ts",
+  "repository": "https://github.com/rishiosaur/ll",
+  "author": "Rishi Kothari",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@vercel/node": "^1.8.4",
+    "firebase": "^8.0.0"
+  }
+}
