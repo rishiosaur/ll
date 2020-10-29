@@ -1,4 +1,11 @@
 # LL
+![lint status](https://github.com/rishiosaur/ll/workflows/lint/badge.svg)
+![format status](https://github.com/rishiosaur/ll/workflows/format/badge.svg)
+![GitHub](https://img.shields.io/github/license/rishiosaur/ll)
+![GitHub issues](https://img.shields.io/github/issues/rishiosaur/ll)
+![GitHub contributors](https://img.shields.io/github/contributors/rishiosaur/ll)
+![GitHub last commit](https://img.shields.io/github/last-commit/rishiosaur/ll)
+
 
 A minimal link shortener powered by Vercel's serverless functions and Firebase Cloud Firestore.
 
@@ -6,10 +13,15 @@ A minimal link shortener powered by Vercel's serverless functions and Firebase C
 
 Your env parameters should come from the Firebase dashboard; they're the default for any new Firebase project.
 
-![lint status](https://github.com/rishiosaur/ll/workflows/lint/badge.svg)
-![format status](https://github.com/rishiosaur/ll/workflows/format/badge.svg)
+Make sure to have a Cloud Firestore collection named `routes` at the top-level.
 
-![GitHub](https://img.shields.io/github/license/rishiosaur/ll)
-![GitHub issues](https://img.shields.io/github/issues/rishiosaur/ll)
-![GitHub contributors](https://img.shields.io/github/contributors/rishiosaur/ll)
-![GitHub last commit](https://img.shields.io/github/last-commit/rishiosaur/ll)
+## Structure of a route:
+
+```
+{
+  url: string
+  public: boolean
+  title?: string
+  description?: string
+}
+```
