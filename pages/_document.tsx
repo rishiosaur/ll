@@ -20,6 +20,18 @@ class MyDocument extends Document {
 	render() {
 		return (
 			<Html>
+				<head>
+					<meta name="title" content="LL - Rishi Kothari" />
+					<meta name="description" content="The self-hosted link shortener!" />
+					<meta
+						name="keywords"
+						content="shorten, link, good, cheap, fast, href"
+					/>
+					<meta name="robots" content="index, follow" />
+					<meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
+					<meta name="language" content="English" />
+					<meta name="author" content="Rishi Kothari" />
+				</head>
 				<Head />
 				<body>
 					<Main />
