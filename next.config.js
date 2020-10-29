@@ -2,7 +2,6 @@ const fetch = require('node-fetch')
 
 module.exports = {
 	async redirects() {
-		console.log(process.env)
 		const urls = await fetch(
 			`https://firestore.googleapis.com/v1/projects/${process.env.projectId}/databases/(default)/documents/routes/`
 		)
