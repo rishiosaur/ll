@@ -1,17 +1,6 @@
 const fetch = require('node-fetch')
 
 module.exports = {
-	headers: [
-		{
-			source: '/(.*)',
-			headers: [
-				{
-					key: 'cache-control',
-					value: 's-maxage=60, stale-while-revalidate',
-				},
-			],
-		},
-	],
 	async redirects() {
 		console.log(process.env)
 		const urls = await fetch(
