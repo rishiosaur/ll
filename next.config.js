@@ -26,7 +26,6 @@ module.exports = {
 		autoAlias: true,
 		enabled: true,
 	},
-	cleanUrls: true,
 	trailingSlash: false,
 	public: true,
 }
