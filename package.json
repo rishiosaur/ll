@@ -44,6 +44,7 @@
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
+		"start": "next start",
 		"format": "prettier --single-quote --write './**/*'",
 		"format:check": "prettier --single-quote --check './**/*'",
 		"lint": "eslint \"./**/*.{js,ts,tsx,jsx}\" --quiet --fix",
