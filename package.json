@@ -8,8 +8,12 @@
 	"license": "MPL-2.0",
 	"private": false,
 	"dependencies": {
+		"@geist-ui/react": "^2.1.0-canary.2",
 		"@vercel/node": "^1.8.4",
+		"next": "^10.0.0",
 		"node-fetch": "^2.6.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
 		"vercel": "^20.1.2"
 	},
 	"devDependencies": {
@@ -38,7 +42,8 @@
 		}
 	},
 	"scripts": {
-		"dev": "vc dev",
+		"dev": "next dev",
+		"build": "next build",
 		"format": "prettier --single-quote --write './**/*'",
 		"format:check": "prettier --single-quote --check './**/*'",
 		"lint": "eslint \"./**/*.{js,ts,tsx,jsx}\" --quiet --fix",
