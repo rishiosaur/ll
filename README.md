@@ -1,4 +1,5 @@
 # LL
+
 ![lint status](https://github.com/rishiosaur/ll/workflows/lint/badge.svg)
 ![format status](https://github.com/rishiosaur/ll/workflows/format/badge.svg)
 ![GitHub](https://img.shields.io/github/license/rishiosaur/ll)
@@ -6,9 +7,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/rishiosaur/ll)
 ![GitHub last commit](https://img.shields.io/github/last-commit/rishiosaur/ll)
 
-
 A minimal link shortener powered by Vercel's serverless functions and Firebase Cloud Firestore.
-
 
 Your env parameters should come from the Firebase dashboard; they're the default for any new Firebase project.
 
@@ -33,6 +32,7 @@ In the Firestore console, create a `routes` collection at the top-level, then cr
 
 Your Cloud Firestore DB should look something like:
 
+![Sample Cloud Firestore](demo_db.png)
 
 Now that you've configured your database, you can finally deploy to Vercel! Just fill in the `projectId` environment variable with the same one that was given in your Firebase setup flow. If you run into any issues, feel free to open a new one.
 
