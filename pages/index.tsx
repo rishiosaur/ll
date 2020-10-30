@@ -48,10 +48,7 @@ const HomeRoutes = ({ routes }) => {
 export default HomeRoutes
 
 export const getServerSideProps = async () => {
-	const response = await fetch(
-		process.env.apiURL
-	)
-		.then((x) => x.json())
+	const response = await fetch(process.env.apiURL).then((x) => x.json())
 
 	return {
 		props: {
