@@ -8,8 +8,6 @@ module.exports = {
 			.then((x) => x.json())
 			.then((x) => x.documents)
 
-
-
 		return urls.map((x) => ({
 			permanent: true,
 			source: `/${x.name.replace(
