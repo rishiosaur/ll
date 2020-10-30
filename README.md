@@ -21,6 +21,10 @@ A minimal link shortener powered by Vercel's serverless functions and Next.js
 }
 ```
 
+`url` is the end URL that you'd like to redirect to.
+`name` is the name of the route that redirects to `url`.
+`public` is a boolean that determines whether or not this redirect shows up in the public directory.
+
 ## Basic Setup
 
 `LL` was created to be completely open; it works with any data source that returns an array of objects that conform to the above protocol.
