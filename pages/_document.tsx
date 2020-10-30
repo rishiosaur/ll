@@ -34,6 +34,12 @@ class MyDocument extends Document {
 
 					<link rel="shortcut icon" href="/ll.png" />
 					<title>Public links.</title>
+					<script
+						async
+						defer
+						data-website-id={process.env.umami}
+						src="https://analytics.rishi.cx/umami.js"
+					/>
 				</head>
 				<Head />
 				<body>
