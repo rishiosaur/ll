@@ -1,14 +1,15 @@
 import {
-	Button,
 	Code,
+	Row,
 	Link,
 	Page,
 	Spacer,
 	Table,
 	Text,
 	useMediaQuery,
+	Tooltip,
 } from '@geist-ui/react'
-import { useRouter } from 'next/router'
+import { QuestionCircle } from '@geist-ui/react-icons'
 const fetch = require('node-fetch')
 
 const HomeRoutes = ({ routes }) => {
@@ -19,8 +20,21 @@ const HomeRoutes = ({ routes }) => {
 	return (
 		<>
 			<Page size="small">
-				<Text h1> Available Public Routes</Text>
-				<Text>URL parameter forwarding is available.</Text>
+				<Text h1>
+					{' '}
+					Public Links{' '}
+					<Tooltip text={"What's this?"} placement="right">
+						<Link href="https://github.com/rishiosaur/ll">
+							<QuestionCircle />
+						</Link>
+					</Tooltip>
+				</Text>
+
+				<Text>
+					Welcome to LL! Here are some interesting links that this website's
+					owner's publicly shared (URL parameter forwarding <i>is</i>{' '}
+					available):
+				</Text>
 				<Table
 					data={routes.map((route) => ({
 						...route,
@@ -41,8 +55,9 @@ const HomeRoutes = ({ routes }) => {
 					<Table.Column prop="url" label="url" />
 				</Table>
 				<Spacer />
+
 				<Text small style={{ marginTop: '1rem' }}>
-					[
+					Proudly runnning [
 					<Link href="https://github.com/rishiosaur/ll">
 						<Code>ll</Code>
 					</Link>
