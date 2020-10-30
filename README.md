@@ -14,6 +14,7 @@ A minimal link shortener powered by Vercel's serverless functions and Next.js
 ```
 {
   url: string
+  name: string
   public: boolean
   title?: string
   description?: string
