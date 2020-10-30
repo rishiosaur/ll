@@ -7,11 +7,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/rishiosaur/ll)
 ![GitHub last commit](https://img.shields.io/github/last-commit/rishiosaur/ll)
 
-A minimal link shortener powered by Vercel's serverless functions and Firebase Cloud Firestore.
-
-Your env parameters should come from the Firebase dashboard; they're the default for any new Firebase project.
-
-Make sure to have a Cloud Firestore collection named `routes` at the top-level.
+A minimal link shortener powered by Vercel's serverless functions and Next.js
 
 ## Structure of a route:
 
@@ -24,16 +20,12 @@ Make sure to have a Cloud Firestore collection named `routes` at the top-level.
 }
 ```
 
-## Setup
+## Basic Setup
 
-First, create a [Firebase](firebase.google.com/) project and initialize Cloud Firestore with Test rules (you can use Production rules, but you need to keep your read privileges open; `ll` functions off of the public-facing Firestore ReST API so that we can keep build times speedy). Keep track of the config object that you are given.
+`LL` was created to be completely open; it works with any data source that returns an array of objects that conform to the above protocol.
 
-In the Firestore console, create a `routes` collection at the top-level, then create one document with a random name (these document names are your routes). Fill in this information using the route structure given above.
+For the most basic setup, you can generate a basic data source by using the [ll-basic](https://github.com/rishiosaur/ll-basic) template. Hit the `routes.json` file and click "Raw" (the returned JSON implements the above protocol; try parsing it yourself!)
 
-Your Cloud Firestore DB should look something like:
-
-![Sample Cloud Firestore](demo_db.png)
-
-Now that you've configured your database, you can finally deploy to Vercel! Just fill in the `projectId` environment variable with the same one that was given in your Firebase setup flow. If you run into any issues, feel free to open a new one.
+The returned URL will be your API url. Just click the button below, and fill in the appropriate fields.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frishiosaur%2Fll&env=apiURL&project-name=link-shortener&repo-name=link-shortener)
