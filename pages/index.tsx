@@ -49,23 +49,19 @@ export default HomeRoutes
 
 export const getServerSideProps = async () => {
 	const response = await fetch(
-		`https://firestore.googleapis.com/v1/projects/${process.env.projectId}/databases/(default)/documents/routes/`
+		process.env.apiURL
 	)
 		.then((x) => x.json())
-		.then((d) => d.documents)
 
 	return {
 		props: {
 			routes: response
 				.map((d) => ({
-					name: d.name.replace(
-						`projects/${process.env.projectId}/databases/(default)/documents/routes/`,
-						''
-					),
-					url: d.fields.url.stringValue,
-					public: d.fields.public.booleanValue,
-					description: d.fields.description?.stringValue || 'n/a',
-					title: d.fields.title?.stringValue || 'n/a',
+					name: d.name,
+					url: d.url,
+					public: d.public,
+					description: d.description || 'n/a',
+					title: d.title || 'n/a',
 				}))
 				.filter((x) => x.public),
 		},
