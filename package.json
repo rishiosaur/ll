@@ -9,6 +9,7 @@
 	"private": false,
 	"dependencies": {
 		"@geist-ui/react": "^2.1.0-canary.2",
+		"@geist-ui/react-icons": "^1.0.1",
 		"@vercel/node": "^1.8.4",
 		"next": "^10.0.0",
 		"node-fetch": "^2.6.1",
