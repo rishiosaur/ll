@@ -10,3 +10,4 @@ yarn.lock
 .env.local
 .env
 LICENSE
+*.png
