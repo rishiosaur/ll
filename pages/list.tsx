@@ -31,9 +31,8 @@ const HomeRoutes = ({ routes }) => {
 				</Text>
 
 				<Text>
-					Welcome to LL! Here are some interesting links that this website's
-					owner's publicly shared (URL parameter forwarding <i>is</i>{' '}
-					available):
+					Welcome to LL! Here are some interesting links that I've publicly
+					shared (URL parameter forwarding <i>is</i> available):
 				</Text>
 				<Table
 					data={routes.map((route) => ({
