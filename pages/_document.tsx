@@ -21,7 +21,7 @@ class MyDocument extends Document {
 		return (
 			<Html>
 				<head>
-					<meta name="title" content="LL - Rishi Kothari" />
+					<meta name="title" content="LL" />
 					<meta name="description" content="The self-hosted link shortener!" />
 					<meta
 						name="keywords"
