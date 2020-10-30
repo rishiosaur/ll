@@ -2,10 +2,7 @@ const fetch = require('node-fetch')
 
 module.exports = {
 	async redirects() {
-		const urls = await fetch(
-			process.env.apiURL
-		)
-			.then((x) => x.json())
+		const urls = await fetch(process.env.apiURL).then((x) => x.json())
 
 		return urls.map((x) => ({
 			permanent: true,
