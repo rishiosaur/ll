@@ -34,7 +34,10 @@ module.exports = {
 
 		if (process.env.list) {
 			rewrites.push({
-				source: process.env.list,
+				source:
+					process.env.list[0] === '/'
+						? process.env.list
+						: `/${process.env.list}`,
 				destination: '/list',
 			})
 		}
