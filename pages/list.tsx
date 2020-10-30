@@ -1,9 +1,20 @@
-import { Button, Code, Link, Page, Spacer, Table, Text } from '@geist-ui/react'
+import {
+	Button,
+	Code,
+	Link,
+	Page,
+	Spacer,
+	Table,
+	Text,
+	useMediaQuery,
+} from '@geist-ui/react'
 import { useRouter } from 'next/router'
 const fetch = require('node-fetch')
 
 const HomeRoutes = ({ routes }) => {
 	console.log(routes)
+
+	const upMD = useMediaQuery('md', { match: 'up' })
 
 	return (
 		<>
@@ -26,7 +37,7 @@ const HomeRoutes = ({ routes }) => {
 					}))}>
 					<Table.Column prop="name" label="Route" />
 					<Table.Column prop="title" label="Title" />
-					<Table.Column prop="description" label="Description" />
+					{upMD && <Table.Column prop="description" label="Description" />}
 					<Table.Column prop="url" label="url" />
 				</Table>
 				<Spacer />
