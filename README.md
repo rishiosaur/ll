@@ -36,4 +36,4 @@ Your Cloud Firestore DB should look something like:
 
 Now that you've configured your database, you can finally deploy to Vercel! Just fill in the `projectId` environment variable with the same one that was given in your Firebase setup flow. If you run into any issues, feel free to open a new one.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frishiosaur%2Fll&env=projectId&project-name=link-shortener&repo-name=link-shortener)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Frishiosaur%2Fll&env=apiURL&project-name=link-shortener&repo-name=link-shortener)
