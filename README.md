@@ -7,7 +7,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/rishiosaur/ll)
 ![GitHub last commit](https://img.shields.io/github/last-commit/rishiosaur/ll)
 
-A minimal link shortener powered by Vercel's serverless functions and Next.js
+A minimal link shortener powered by Next.js and Vercel.
 
 ## Structure of a route:
 
