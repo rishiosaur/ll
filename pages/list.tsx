@@ -12,9 +12,20 @@ import {
 import { QuestionCircle } from '@geist-ui/react-icons'
 const fetch = require('node-fetch')
 
-const HomeRoutes = ({ routes }) => {
-	console.log(routes)
+interface Route {
+	name: string
+	title: string
+	description: string
+	url: string
+	title: string
+	public: boolean
+}
 
+interface HomeRouteProps {
+	routes: Array<Route>
+}
+
+const HomeRoutes: React.FC<HomeRouteProps> = ({ routes }) => {
 	const upMD = useMediaQuery('md', { match: 'up' })
 
 	return (
