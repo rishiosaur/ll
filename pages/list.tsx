@@ -17,7 +17,6 @@ interface Route {
 	title: string
 	description: string
 	url: string
-	title: string
 	public: boolean
 }
 
