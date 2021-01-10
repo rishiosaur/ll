@@ -1,8 +1,23 @@
-const fetch = require('node-fetch')
+const { request } = require('graphql-request')
 
 module.exports = {
 	async redirects() {
-		const urls = await fetch(process.env.apiURL).then((x) => x.json())
+		// const urls = await fetch(process.env.apiURL).then((x) => x.json())
+
+		const { links: urls } = await request(
+			'https://api-us-east-1.graphcms.com/v2/ckjq7p0mau50s01z1aio1b4ia/master',
+			`
+		query Query {
+			links {
+			  title
+			  public
+			  description
+			  url
+			  name
+			}
+		  }
+		`
+		)
 
 		const redirects = urls.map((x) => ({
 			permanent: true,

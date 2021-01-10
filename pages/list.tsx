@@ -11,7 +11,7 @@ import {
 	Image,
 } from '@geist-ui/react'
 import { QuestionCircle } from '@geist-ui/react-icons'
-const fetch = require('node-fetch')
+import { request } from 'graphql-request'
 
 const HomeRoutes = ({ routes }) => {
 	console.log(routes)
@@ -80,7 +80,22 @@ const HomeRoutes = ({ routes }) => {
 export default HomeRoutes
 
 export const getStaticProps = async () => {
-	const response = await fetch(process.env.apiURL).then((x) => x.json())
+	const { links: response } = await request(
+		'https://api-us-east-1.graphcms.com/v2/ckjq7p0mau50s01z1aio1b4ia/master',
+		`
+	query Query {
+		links {
+		  title
+		  public
+		  description
+		  url
+		  name
+		}
+	  }
+	`
+	)
+
+	console.log(response)
 
 	return {
 		props: {
