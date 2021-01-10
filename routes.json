@@ -1,1 +1,92 @@
-[{"id":1,"name":"g","title":"Github","description":"All of my open-source and personal work","public":true,"url":"https://github.com/rishiosaur","created_at":"2020-10-30T12:12:51.709Z","updated_at":"2020-10-30T12:12:51.825Z"},{"id":2,"name":"t","title":"Twitter","description":"Thoughts, analogies, and just all-around me being me.","public":true,"url":"https://twitter.com/rishiosaur","created_at":"2020-10-30T13:01:30.811Z","updated_at":"2020-10-30T13:01:30.826Z"},{"id":3,"name":"i","title":"Instagram","description":"Posts, features, and pictures!","public":true,"url":"https://instagram.com/rishi.cx","created_at":"2020-10-30T13:03:00.469Z","updated_at":"2020-10-30T13:03:00.481Z"},{"id":4,"name":"l","title":"Linkedin","description":"My platform on the worst social media app of all time,.","public":true,"url":"https://linkedin.com/in/heyrishi","created_at":"2020-10-30T13:03:30.434Z","updated_at":"2020-10-30T13:03:36.636Z"},{"id":5,"name":"w","title":"Website","description":"My personal website!","public":true,"url":"https://rishi.cx","created_at":"2020-10-30T14:23:28.824Z","updated_at":"2020-10-30T14:23:28.844Z"},{"id":6,"name":"s","title":"Spotify","description":"My music tastes.","public":true,"url":"https://open.spotify.com/user/rishiosaur?si=wGLvabOwTo2lrTHcjmuYgA","created_at":"2020-10-30T20:07:05.660Z","updated_at":"2020-10-30T20:07:05.674Z"},{"id":7,"name":"b","title":"Blog","description":"Musings on life.","public":true,"url":"https://rishi.cx/articles","created_at":"2020-10-31T02:47:23.695Z","updated_at":"2020-10-31T02:47:23.713Z"},{"id":9,"name":"m","title":"Meeting","description":"A general-purpose meeting request.","public":true,"url":"https://calendly.com/heyrishi/meet","created_at":"2020-11-03T19:45:25.596Z","updated_at":"2020-11-03T19:45:25.611Z"},{"id":10,"name":"digital","title":"Digital Citizenship","description":"Digital Citizenship","public":false,"url":"https://www.notion.so/rishikothari/Digital-Citizenship-b9ba1ae2ba3f4b55912963ff5782c270","created_at":"2020-11-20T01:48:26.175Z","updated_at":"2020-11-20T01:48:26.383Z"}]
+[
+	{
+		"id": 1,
+		"name": "g",
+		"title": "Github",
+		"description": "All of my open-source and personal work",
+		"public": true,
+		"url": "https://github.com/rishiosaur",
+		"created_at": "2020-10-30T12:12:51.709Z",
+		"updated_at": "2020-10-30T12:12:51.825Z"
+	},
+	{
+		"id": 2,
+		"name": "t",
+		"title": "Twitter",
+		"description": "Thoughts, analogies, and just all-around me being me.",
+		"public": true,
+		"url": "https://twitter.com/rishiosaur",
+		"created_at": "2020-10-30T13:01:30.811Z",
+		"updated_at": "2020-10-30T13:01:30.826Z"
+	},
+	{
+		"id": 3,
+		"name": "i",
+		"title": "Instagram",
+		"description": "Posts, features, and pictures!",
+		"public": true,
+		"url": "https://instagram.com/rishi.cx",
+		"created_at": "2020-10-30T13:03:00.469Z",
+		"updated_at": "2020-10-30T13:03:00.481Z"
+	},
+	{
+		"id": 4,
+		"name": "l",
+		"title": "Linkedin",
+		"description": "My platform on the worst social media app of all time,.",
+		"public": true,
+		"url": "https://linkedin.com/in/heyrishi",
+		"created_at": "2020-10-30T13:03:30.434Z",
+		"updated_at": "2020-10-30T13:03:36.636Z"
+	},
+	{
+		"id": 5,
+		"name": "w",
+		"title": "Website",
+		"description": "My personal website!",
+		"public": true,
+		"url": "https://rishi.cx",
+		"created_at": "2020-10-30T14:23:28.824Z",
+		"updated_at": "2020-10-30T14:23:28.844Z"
+	},
+	{
+		"id": 6,
+		"name": "s",
+		"title": "Spotify",
+		"description": "My music tastes.",
+		"public": true,
+		"url": "https://open.spotify.com/user/rishiosaur?si=wGLvabOwTo2lrTHcjmuYgA",
+		"created_at": "2020-10-30T20:07:05.660Z",
+		"updated_at": "2020-10-30T20:07:05.674Z"
+	},
+	{
+		"id": 7,
+		"name": "b",
+		"title": "Blog",
+		"description": "Musings on life.",
+		"public": true,
+		"url": "https://rishi.cx/articles",
+		"created_at": "2020-10-31T02:47:23.695Z",
+		"updated_at": "2020-10-31T02:47:23.713Z"
+	},
+	{
+		"id": 9,
+		"name": "m",
+		"title": "Meeting",
+		"description": "A general-purpose meeting request.",
+		"public": true,
+		"url": "https://calendly.com/heyrishi/meet",
+		"created_at": "2020-11-03T19:45:25.596Z",
+		"updated_at": "2020-11-03T19:45:25.611Z"
+	},
+	{
+		"id": 10,
+		"name": "digital",
+		"title": "Digital Citizenship",
+		"description": "Digital Citizenship",
+		"public": false,
+		"url": "https://www.notion.so/rishikothari/Digital-Citizenship-b9ba1ae2ba3f4b55912963ff5782c270",
+		"created_at": "2020-11-20T01:48:26.175Z",
+		"updated_at": "2020-11-20T01:48:26.383Z"
+	}
+]
